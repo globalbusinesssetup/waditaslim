@@ -18,7 +18,12 @@
   height: 100%;
   top: 0;
   left: -100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: all 0.6s ease;
 }
 
@@ -181,6 +186,8 @@
 .service-description {
   color: var(--text-secondary);
   margin-bottom: var(--space-md);
+  margin: 0;
+  text-align: left;
 }
 
 .service-link {
@@ -214,6 +221,7 @@
   position: relative;
   overflow: hidden;
   aspect-ratio: 16/9;
+  width: 100%;
 }
 
 .project-image img {
@@ -404,6 +412,129 @@
   transform: scale(1.2);
 }
 
+/* Team Section with Swiper */
+.teams-swiper {
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.teams-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Swiper Navigation Buttons */
+.teams-swiper-button-next,
+.teams-swiper-button-prev {
+  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-fast);
+}
+
+.teams-swiper-button-next:hover,
+.teams-swiper-button-prev:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.teams-swiper-button-next::after,
+.teams-swiper-button-prev::after {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}
+
+/* Swiper Pagination */
+.teams-swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+
+.teams-swiper-pagination .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transition: all var(--transition-fast);
+}
+
+.teams-swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+/* Social Links Overlay */
+.social-links-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.flip-card:hover .social-links-overlay {
+  opacity: 1;
+}
+
+.social-links-overlay .social-link,
+.social-links-back .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.social-links-overlay .social-link:hover,
+.social-links-back .social-link:hover {
+  background: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+.social-links-back {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .teams-swiper {
+    padding: 20px 0;
+  }
+
+  .teams-swiper-button-next,
+  .teams-swiper-button-prev {
+    width: 45px;
+    height: 45px;
+  }
+
+  .teams-swiper-button-next::after,
+  .teams-swiper-button-prev::after {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .teams-swiper-button-next,
+  .teams-swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* Team card */
 
 h2,
@@ -462,7 +593,7 @@ p.subtitle {
 }
 
 .flip-card-front {
-  background-color: transparent
+  background-color: transparent;
   /* background: linear-gradient(to top, rgba(13, 11, 31, 0.95), rgba(13, 11, 31, 0.1)); */
 }
 
@@ -470,7 +601,6 @@ p.subtitle {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 .overlay {
@@ -479,7 +609,12 @@ p.subtitle {
   left: 0;
   width: 100%;
   padding: 20px;
-  background: linear-gradient(to top, #646cff 0%, rgba(13, 11, 31, 0.95) 0%, rgba(13, 11, 31, 0.1) 100%);
+  background: linear-gradient(
+    to top,
+    #646cff 0%,
+    rgba(13, 11, 31, 0.95) 0%,
+    rgba(13, 11, 31, 0.1) 100%
+  );
 }
 
 .name {
@@ -498,13 +633,13 @@ p.subtitle {
   color: #ccc;
   transform: rotateY(180deg);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   text-align: center;
   font-size: 14px;
 }
-
 
 /* Contact Form */
 .contact-form {
@@ -596,14 +731,13 @@ p.subtitle {
   display: block;
 }
 
-.footer-info{
+.footer-info {
   display: flex;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-
 
 .footer-title {
   font-size: 1.25rem;
@@ -700,4 +834,9 @@ p.subtitle {
 .back-to-top:hover {
   background-color: var(--primary-dark);
   transform: translateY(-5px);
+}
+
+.contact-text {
+  margin-left: 0;
+  margin-right: 0;
 }

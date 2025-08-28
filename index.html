@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wadi Taslim Technologies | Innovative IT Solutions</title>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/waditaslim_logo.jpeg" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Add Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
 
@@ -85,97 +90,20 @@
       </section>
 
       <section id="services" class="services">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">
-              Our <span class="highlight">Services</span>
-            </h2>
-            <p class="section-subtitle">
-              Comprehensive IT solutions tailored to your business needs
-            </p>
-          </div>
-          <div class="services-grid">
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-icon">
-                <i class="fas fa-code"></i>
-              </div>
-              <h3 class="service-title">Web Development</h3>
-              <p class="service-description">
-                Custom web applications designed to deliver exceptional user
-                experiences and drive business growth.
-              </p>
-              <a href="#contact" class="service-link"
-                >Learn more <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-icon">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <h3 class="service-title">Mobile Solutions</h3>
-              <p class="service-description">
-                Native and cross-platform mobile applications that connect your
-                business with customers on the go.
-              </p>
-              <a href="#contact" class="service-link"
-                >Learn more <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-icon">
-                <i class="fas fa-cloud"></i>
-              </div>
-              <h3 class="service-title">Cloud Services</h3>
-              <p class="service-description">
-                Secure and scalable cloud infrastructure solutions that optimize
-                performance and reduce costs.
-              </p>
-              <a href="#contact" class="service-link"
-                >Learn more <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <h3 class="service-title">Cybersecurity</h3>
-              <p class="service-description">
-                Comprehensive security solutions to protect your business data
-                and infrastructure from threats.
-              </p>
-              <a href="#contact" class="service-link"
-                >Learn more <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-icon">
-                <i class="fas fa-robot"></i>
-              </div>
-              <h3 class="service-title">AI & Machine Learning</h3>
-              <p class="service-description">
-                Intelligent solutions that automate processes and deliver
-                actionable insights from your data.
-              </p>
-              <a href="#contact" class="service-link"
-                >Learn more <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-icon">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <h3 class="service-title">IT Consulting</h3>
-              <p class="service-description">
-                Strategic technology guidance to align your IT investments with
-                business objectives.
-              </p>
-              <a href="#contact" class="service-link"
-                >Learn more <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        Our <span class="highlight">Services</span>
+      </h2>
+      <p class="section-subtitle">
+        Comprehensive IT solutions tailored to your business needs
+      </p>
+    </div>
+    <div class="services-grid" id="services-grid">
+      <!-- Services will be dynamically generated here -->
+    </div>
+  </div>
+</section>
 
       <section id="about" class="about">
         <div class="container">
@@ -230,123 +158,22 @@
             <h2 class="section-title">
               Our <span class="highlight">Projects</span>
             </h2>
-            <p class="section-subtitle">A showcase of our finest work</p>
+            <p class="section-subtitle">A showcase of our work</p>
           </div>
+          
+          <!-- Project Filters -->
           <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="cloud">Cloud</button>
-            <button class="filter-btn" data-filter="ai">AI</button>
+            <!-- Filter buttons will be dynamically generated -->
           </div>
+          
+          <!-- Projects Grid -->
           <div class="projects-grid">
-            <div class="project-card" data-category="web">
-              <div class="project-image">
-                <img
-                  src="https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="E-commerce Platform"
-                />
-                <div class="project-overlay">
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-link"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">E-commerce Platform</h3>
-                <p class="project-category">Web Development</p>
-              </div>
-            </div>
-            <div class="project-card" data-category="mobile">
-              <div class="project-image">
-                <img
-                  src="https://images.pexels.com/photos/207589/pexels-photo-207589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Fitness Tracker App"
-                />
-                <div class="project-overlay">
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-link"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Fitness Tracker App</h3>
-                <p class="project-category">Mobile Development</p>
-              </div>
-            </div>
-            <div class="project-card" data-category="cloud">
-              <div class="project-image">
-                <img
-                  src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Cloud Migration"
-                />
-                <div class="project-overlay">
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-link"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Cloud Migration</h3>
-                <p class="project-category">Cloud Services</p>
-              </div>
-            </div>
-            <div class="project-card" data-category="ai">
-              <div class="project-image">
-                <img
-                  src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Predictive Analytics System"
-                />
-                <div class="project-overlay">
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-link"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Predictive Analytics</h3>
-                <p class="project-category">AI & Machine Learning</p>
-              </div>
-            </div>
-            <div class="project-card" data-category="web">
-              <div class="project-image">
-                <img
-                  src="https://images.pexels.com/photos/5926398/pexels-photo-5926398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Healthcare Portal"
-                />
-                <div class="project-overlay">
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-link"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Healthcare Portal</h3>
-                <p class="project-category">Web Development</p>
-              </div>
-            </div>
-            <div class="project-card" data-category="mobile">
-              <div class="project-image">
-                <img
-                  src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Food Delivery App"
-                />
-                <div class="project-overlay">
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-link"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Food Delivery App</h3>
-                <p class="project-category">Mobile Development</p>
-              </div>
-            </div>
+            <!-- Projects will be dynamically generated here -->
           </div>
         </div>
       </section>
 
-      <section id="testimonials" class="testimonials">
+      <!-- <section id="testimonials" class="testimonials">
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">
@@ -446,94 +273,25 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team section start -->
-      <section>
+      <section class="container">
         <h2 class="section-title">
           Meet Our <span class="highlight">Team</span>
         </h2>
 
-        <div class="card-grid">
-          <!-- card 1 -->
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/C4D03AQFePWBEvZkSKg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1626036594864?e=1759363200&v=beta&t=VWtuB1YUHbCMf8lFeKAqZZvWOHdxgWBxqMcF4mww0DA"
-                  alt="Yomi Denzel"
-                />
-                <div class="overlay">
-                  <div class="name">Yomi Denzel</div>
-                  <div class="role">Full-Stack Developer</div>
-                </div>
-              </div>
-              <div class="flip-card-back">
-                Known for scaling e-com businesses using automation and
-                marketing mastery.
-              </div>
-            </div>
+        <div class="swiper teams-swiper" style="padding: 34px 24px">
+          <div class="swiper-wrapper">
+            <!-- Team members will be dynamically generated here -->
           </div>
 
-          <!-- card 2 -->
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  src="./public/members/muzahid.enc"
-                  alt="Timothée Moiroux"
-                />
-                <div class="overlay">
-                  <div class="name">Timothée Moiroux</div>
-                  <div class="role">MERN-Stack Developer</div>
-                </div>
-              </div>
-              <div class="flip-card-back">
-                Timothée made his first real estate and financial investments
-                while still a medical student.
-              </div>
-            </div>
-          </div>
+          <!-- Swiper Navigation -->
+          <div class="swiper-button-next teams-swiper-button-next"></div>
+          <div class="swiper-button-prev teams-swiper-button-prev"></div>
 
-          <!-- card 3 -->
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQEpOw1P3OZZYw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1716025712217?e=1759363200&v=beta&t=Dkm9sea-c1XT2oo8Ru0f8dWQOKplUS18RO7c46Edj30"
-                  alt="David Sequiera"
-                />
-                <div class="overlay">
-                  <div class="name">David Sequiera</div>
-                  <div class="role">Front-end Developer</div>
-                </div>
-              </div>
-              <div class="flip-card-back">
-                Expert in high-ticket sales, deal closing, and lead conversion
-                strategies at scale.
-              </div>
-            </div>
-          </div>
-
-          <!-- card 4 -->
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQFCAa2JmCuYPw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719897970722?e=1759363200&v=beta&t=ro8ws4c2SUU0m5ZZBg48MIaCQkyMqBPmG-PRKmy-NwM"
-                  alt="Manuel Ravier"
-                />
-                <div class="overlay">
-                  <div class="name">Manuel Ravier</div>
-                  <div class="role">Software Engineer</div>
-                </div>
-              </div>
-              <div class="flip-card-back">
-                Helping entrepreneurs build wealth through strategic real estate
-                investing across Europe.
-              </div>
-            </div>
-          </div>
+          <!-- Swiper Pagination -->
+          <div class="swiper-pagination teams-swiper-pagination"></div>
         </div>
       </section>
       <!-- Team section end -->
@@ -554,9 +312,7 @@
                 </div>
                 <div class="contact-details">
                   <h3 class="contact-title">Location</h3>
-                  <p class="contact-text">
-                    123 Tech Park, Silicon Valley, CA 94043
-                  </p>
+                  <p class="contact-text">1004, Mai Tower, Al Nahda 1, Dubai</p>
                 </div>
               </div>
               <div class="contact-item">
@@ -574,22 +330,24 @@
                 </div>
                 <div class="contact-details">
                   <h3 class="contact-title">Phone</h3>
-                  <p class="contact-text">+1 (555) 123-4567</p>
+                  <p class="contact-text">+971 58 505 7213</p>
                 </div>
               </div>
               <div class="social-links">
-                <a href="#" class="social-link"
+                <a target="_blank"
+                  href="https://www.linkedin.com/company/waditaslim/"
+                  class="social-link"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
-                <a href="#" class="social-link"
+                <!-- <a href="#" class="social-link"
                   ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" class="social-link"
+                ></a> -->
+                <a target="_blank" href=https://www.facebook.com/waditaslim class="social-link"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
-                <a href="#" class="social-link"
+                <!-- <a href="#" class="social-link"
                   ><i class="fab fa-instagram"></i
-                ></a>
+                ></a> -->
               </div>
             </div>
             <div class="contact-form-container">
@@ -651,7 +409,7 @@
                 style="color: gray; font-size: 14px"
                 class="footer-description"
               >
-                🏠︎ 123 Tech Park, Silicon valley, CA94043
+                🏠︎ 1004, Mai Tower, Al Nahda 1, Dubai
               </p>
             </div>
           </div>
@@ -677,7 +435,7 @@
               <li><a href="#services">IT Consulting</a></li>
             </ul>
           </div>
-          <div class="footer-newsletter">
+          <!-- <div class="footer-newsletter">
             <h3 class="footer-title">Newsletter</h3>
             <p class="footer-newsletter-text">
               Subscribe to our newsletter to receive updates on our latest
@@ -687,25 +445,27 @@
               <input type="email" placeholder="Your email" required />
               <button type="submit" class="btn btn-primary">Subscribe</button>
             </form>
-          </div>
+          </div> -->
         </div>
         <div class="footer-bottom">
           <p class="copyright">
             © 2025 Wadi Taslim Technologies. All rights reserved.
           </p>
           <div class="footer-social">
-            <a href="#" class="footer-social-link"
+            <a target="_blank"
+              href="https://www.linkedin.com/company/waditaslim/"
+              class="footer-social-link"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a href="#" class="footer-social-link"
+            <!-- <a href="#" class="footer-social-link"
               ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="#" class="footer-social-link"
+            ></a> -->
+            <a target="_blank" href=https://www.facebook.com/waditaslim class="footer-social-link"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a href="#" class="footer-social-link"
+            <!-- <a href="#" class="footer-social-link"
               ><i class="fab fa-instagram"></i
-            ></a>
+            ></a> -->
           </div>
         </div>
       </div>
@@ -714,7 +474,9 @@
     <a href="#home" class="back-to-top" id="back-to-top">
       <i class="fas fa-arrow-up"></i>
     </a>
-
+    <!-- Add Swiper JS before your main.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
