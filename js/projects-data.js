@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     title: 'E-commerce Platform',
     category: 'web',
-    image: './public/projects/sukransouq.png',
+    image: '/projects/sukransouq.png',
     description:
       'A comprehensive e-commerce solution with advanced features including payment processing, inventory management, and analytics dashboard.',
     technologies: ['React', 'Next.js', 'SQL', 'Stripe'],
@@ -16,7 +16,7 @@ export const projectsData = [
     id: 2,
     title: 'E-commerce Platform',
     category: 'mobile',
-    image: './public/projects/printcraft.png',
+    image: '/projects/printcraft.png',
     description:
       'Cross-platform mobile application for tracking fitness activities, nutrition, and health metrics with social features.',
     technologies: ['React', 'Next.js', 'SQL', , 'Stripe', 'React Query'],
@@ -29,7 +29,7 @@ export const projectsData = [
     id: 3,
     title: 'Flight Booking Web App',
     category: 'cloud',
-    image: './public/projects/shukrantrip.png',
+    image: '/projects/shukrantrip.png',
     description:
       'Complete cloud infrastructure migration for enterprise client, improving performance and reducing costs by 40%.',
     technologies: ['AWS', 'Java', 'React', 'Next.js', 'Zustand', 'Stripe'],
