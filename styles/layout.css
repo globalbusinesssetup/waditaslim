@@ -4,6 +4,7 @@
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--space-md);
+  position: relative;
 }
 
 /* Section Layout */
@@ -52,7 +53,7 @@ section {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
   gap: var(--space-lg);
   padding-bottom: var(--space-lg);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -140,7 +141,7 @@ section {
 }
 
 .highlight::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -4px;
   left: 0;
