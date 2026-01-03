@@ -27,7 +27,7 @@ export const teamMembers = [
     id: 3,
     name: 'Sadequl Islam',
     role: 'Front-end Developer',
-    image: '/members/sadequl.jpg',
+    image: '/members/sadequl.jpeg',
     description:
       'Creative front-end developer specializing in modern UI/UX design and responsive web applications. Expert in React, React Native, Vue.js, and CSS frameworks. Focuses on creating intuitive and accessible user interfaces.',
     social: {
